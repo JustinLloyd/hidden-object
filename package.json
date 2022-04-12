@@ -1,0 +1,37 @@
+{
+  "name": "hidden-object",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JustinLloyd/hidden-object.git"
+  },
+  "scripts": {
+    "start": "parcel serve ./src/html/hiddenobject.html",
+    "build": "parcel build ./src/html/hiddenobject.html --public-url=./ --no-content-hash --dist-dir final --no-optimize --detailed-report",
+    "watch": "parcel watch ./src/html/hiddenobject.html",
+    "prebuild": "rimraf ./final"
+  },
+  "file": [
+    "src/scripts/",
+    "src/css/",
+    "src/html/**/*",
+    "src/assets/**/*",
+    "build/",
+    "dist/"
+  ],
+  "dependencies": {
+    "@types/gsap": "^3.0.0",
+    "@types/jquery": "^3.5.13",
+    "eventemitter3": "^4.0.7",
+    "gsap": "^3.9.1",
+    "inline-scripts": "^1.7.4",
+    "jquery": "^3.6.0",
+    "parcel": "^2.2.1",
+    "pixi-filters": "^4.1.6",
+    "pixi.js": "^6.2.2",
+    "rimraf": "^3.0.2",
+    "sharp": "^0.28.3",
+    "systemjs": "^6.10.2",
+    "typescript": "^4.5.5"
+  }
+}
