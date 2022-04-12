@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "sourceMap": true,
+    "removeComments": true,
+    "outDir": "build/",
+    "moduleResolution": "node",
+    "lib": [ "es6", "dom" ],
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "exclude": [
+    ".git",
+    "node_modules",
+    "dist",
+    "build",
+    "artwork",
+    "SVG",
+    "final"
+  ],
+  "include": [
+    "src/scripts/**/*.ts",
+    "src/html/*",
+    "src/css/*",
+    "src/assets/**/*",
+  ]
+}
